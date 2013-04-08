@@ -2,7 +2,7 @@
 class IndexController extends Controller{
 
     public function actionIndex(){
-
+         echo 123;
     }
 
 
