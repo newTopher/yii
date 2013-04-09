@@ -36,10 +36,20 @@ class RegisterController extends Controller{
     }
 
     /*
-     * 注册
+     * 注册页面显示
      */
     public function actionShowReg(){
          $this->render("reg");
     }
+
+    /*
+     * 注册
+     */
+    public function actionReg(){
+        echo $username=Yii::app()->request->getParam('username');
+
+    }
+
+
 
 }

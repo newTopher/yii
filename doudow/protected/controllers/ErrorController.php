@@ -8,6 +8,6 @@ class ErrorController extends Controller{
         $result=array();
         $result['code']='-1';
         $result['msg']='请求非法';
-        $this->parseToJson($result);
+        $this->rebackData($result);
     }
 }

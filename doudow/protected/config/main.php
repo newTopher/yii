@@ -73,6 +73,7 @@ return array(
 				array(
 					'class'=>'CFileLogRoute',
 					'levels'=>'error, warning',
+                    'categories'=>'system.*',
 				),
 				// uncomment the following to show log messages on web pages
 				/*
@@ -80,8 +81,10 @@ return array(
 					'class'=>'CWebLogRoute',
 				),
 				*/
+
 			),
 		),
+
 	),
 
 	// application-level parameters that can be accessed

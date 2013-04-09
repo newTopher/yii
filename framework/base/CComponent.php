@@ -293,8 +293,9 @@ class CComponent
 	 */
 	public function attachBehaviors($behaviors)
 	{
-		foreach($behaviors as $name=>$behavior)
+		foreach($behaviors as $name=>$behavior){
 			$this->attachBehavior($name,$behavior);
+        }
 	}
 
 	/**
