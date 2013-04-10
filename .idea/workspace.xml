@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2258390-1240-43af-8600-39a2babdd377" name="Default" comment="" />
+    <list default="true" id="f2258390-1240-43af-8600-39a2babdd377" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/protected/controllers/ErrorController.php" afterPath="$PROJECT_DIR$/doudow/protected/controllers/ErrorController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/protected/controllers/RegisterController.php" afterPath="$PROJECT_DIR$/doudow/protected/controllers/RegisterController.php" />
+    </list>
     <ignored path="yii.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365490545734" ignored="false" />
+    <file path="/Dummy.txt" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365572728015" ignored="false" />
     <file path="/reg.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365492351343" ignored="false" />
     <file path="/RegisterController.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365494835375" ignored="false" />
     <file path="/ErrorController.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365492765125" ignored="false" />
@@ -38,7 +41,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -73,6 +75,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -82,10 +85,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index-test.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index-test.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doudow/index-test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="146" selection-end="146" vertical-scroll-proportion="0.05060241">
+            <state line="14" column="19" selection-start="438" selection-end="438" vertical-scroll-proportion="-7.7">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="38" selection-start="44" selection-end="44" vertical-scroll-proportion="-0.7">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ErrorController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/ErrorController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/RegisterController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="11" selection-start="995" selection-end="995" vertical-scroll-proportion="0.6831325">
               <folding />
             </state>
           </provider>
@@ -116,7 +146,6 @@
         <option value="$PROJECT_DIR$/framework/logging/CFileLogRoute.php" />
         <option value="$PROJECT_DIR$/framework/yiilite.php" />
         <option value="$PROJECT_DIR$/framework/logging/CLogger.php" />
-        <option value="$PROJECT_DIR$/doudow/protected/controllers/RegisterController.php" />
         <option value="$PROJECT_DIR$/framework/YiiBase.php" />
         <option value="$PROJECT_DIR$/doudow/protected/config/main.php" />
         <option value="$PROJECT_DIR$/framework/logging/CLogRouter.php" />
@@ -125,6 +154,7 @@
         <option value="$PROJECT_DIR$/framework/base/CComponent.php" />
         <option value="$PROJECT_DIR$/framework/base/CModule.php" />
         <option value="$PROJECT_DIR$/framework/web/CWebApplication.php" />
+        <option value="$PROJECT_DIR$/doudow/protected/controllers/RegisterController.php" />
       </list>
     </option>
   </component>
@@ -204,11 +234,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="doudow" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -223,6 +249,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="doudow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="register" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -290,8 +328,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -299,13 +337,13 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -337,19 +375,6 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -376,6 +401,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -451,30 +489,30 @@
     <frame x="1" y="2" width="1918" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="101" y="102" width="1718" height="847" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.50053763" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.49569893" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.50053763" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.49569893" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1688172" sideWeight="0.6704162" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="101" y="102" width="1718" height="847" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -533,76 +571,39 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/framework/YiiBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="262" column="27" selection-start="9808" selection-end="9808" vertical-scroll-proportion="1.4333333">
-          <folding>
-            <element signature="e#6#260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/base/interfaces.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="512" column="20" selection-start="18502" selection-end="18502" vertical-scroll-proportion="0.34457833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/base/CApplication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="34" selection-start="5792" selection-end="5792" vertical-scroll-proportion="0.025220681">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework/base/CModule.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="545" column="23" selection-start="17071" selection-end="17071" vertical-scroll-proportion="0.7766749">
-          <folding />
-        </state>
+        <state line="545" column="23" selection-start="17071" selection-end="17071" vertical-scroll-proportion="0.7766749" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/web/actions/CAction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="15" selection-start="885" selection-end="885" vertical-scroll-proportion="0.34491315">
-          <folding />
-        </state>
+        <state line="30" column="15" selection-start="885" selection-end="885" vertical-scroll-proportion="0.34491315" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/web/actions/CInlineAction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="32" selection-start="527" selection-end="527" vertical-scroll-proportion="0.19036144">
-          <folding />
-        </state>
+        <state line="20" column="32" selection-start="527" selection-end="527" vertical-scroll-proportion="0.19036144" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/base/CComponent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="6" selection-start="3710" selection-end="3710" vertical-scroll-proportion="-7.0301204">
-          <folding />
-        </state>
+        <state line="88" column="6" selection-start="3710" selection-end="3710" vertical-scroll-proportion="-7.0301204" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/web/CBaseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="45" selection-start="2068" selection-end="2068" vertical-scroll-proportion="81.26667">
-          <folding />
-        </state>
+        <state line="66" column="45" selection-start="2068" selection-end="2068" vertical-scroll-proportion="81.26667" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/web/CWebModule.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="20" selection-start="5979" selection-end="5979" vertical-scroll-proportion="-9.766666">
-          <folding />
-        </state>
+        <state line="181" column="20" selection-start="5979" selection-end="5979" vertical-scroll-proportion="-9.766666" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/web/filters/CFilterChain.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="37" selection-start="1520" selection-end="1520" vertical-scroll-proportion="-2.4">
-          <folding />
-        </state>
+        <state line="57" column="37" selection-start="1520" selection-end="1520" vertical-scroll-proportion="-2.4" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doudow/protected/components/Controller.php">
@@ -621,16 +622,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/web/CWebApplication.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="309" column="20" selection-start="10563" selection-end="10563" vertical-scroll-proportion="1.0156627">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="38" selection-start="44" selection-end="44" vertical-scroll-proportion="0.025301205">
-          <folding />
-        </state>
+        <state line="309" column="20" selection-start="10563" selection-end="10563" vertical-scroll-proportion="1.0156627" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework/db/CDbConnection.php">
@@ -640,9 +632,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/doudow/protected/views/register/reg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/doudow/index-test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="146" selection-end="146" vertical-scroll-proportion="0.05060241">
+        <state line="14" column="19" selection-start="438" selection-end="438" vertical-scroll-proportion="-7.7">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="38" selection-start="44" selection-end="44" vertical-scroll-proportion="-0.7">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/ErrorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="11" selection-start="995" selection-end="995" vertical-scroll-proportion="0.6831325">
           <folding />
         </state>
       </provider>

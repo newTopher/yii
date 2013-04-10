@@ -43,7 +43,7 @@ class RegisterController extends Controller{
     }
 
     /*
-     * 注册
+     * 注册方法
      */
     public function actionReg(){
         echo $username=Yii::app()->request->getParam('username');
