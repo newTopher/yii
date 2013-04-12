@@ -172,6 +172,9 @@ class CWebApplication extends CApplication
 			'widgetFactory'=>array(
 				'class'=>'CWidgetFactory',
 			),
+            'python'=>array(
+                'class'=>'CPython'
+            ),
 		);
 
 		$this->setComponents($components);
@@ -184,6 +187,10 @@ class CWebApplication extends CApplication
 	{
 		return $this->getComponent('authManager');
 	}
+
+    public function getPython(){
+        return $this->getComponent('python');
+    }
 
 	/**
 	 * @return CAssetManager the asset manager component

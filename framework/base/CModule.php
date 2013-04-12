@@ -447,6 +447,7 @@ abstract class CModule extends CComponent
 		else
 			$this->_componentConfig[$id]=$component;
 
+
 	}
 
 	/**

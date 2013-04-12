@@ -1,10 +1,11 @@
 <?php
-/**
- * This is the bootstrap file for test application.
- * This file should be removed when the application is deployed for production.
- */
 
-// change the following paths if necessary
+define('PYTHON_SERVER_HOST','127.0.0.1');
+define('PYTHON_SERVER_PORT','21230');
+define("PARAM_TYPE_ERROR", 101);
+define("SOCKET_ERROR", 102);
+define("PYTHON_SERVER_EXCEPTION", 104);
+
 $yii=dirname(__FILE__).'/../framework/yii.php';
 $config=dirname(__FILE__).'/protected/config/test.php';
 
