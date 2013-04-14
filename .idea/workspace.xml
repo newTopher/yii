@@ -1,43 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2258390-1240-43af-8600-39a2babdd377" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/framework/python/CPython.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doudow/protected/pythonfiles/Pythonserver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/base/CModule.php" afterPath="$PROJECT_DIR$/framework/base/CModule.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/web/CWebApplication.php" afterPath="$PROJECT_DIR$/framework/web/CWebApplication.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/protected/controllers/IndexController.php" afterPath="$PROJECT_DIR$/doudow/protected/controllers/IndexController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/YiiBase.php" afterPath="$PROJECT_DIR$/framework/YiiBase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/index-test.php" afterPath="$PROJECT_DIR$/doudow/index-test.php" />
+    <list default="true" id="1dfd6202-cc58-4ec5-8ebc-b801957d9e4d" name="Default" comment="">
+      <change type="DELETED" beforePath="E:\Apache2.2\htdocs\yii\.idea\other.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Apache2.2\htdocs\yii\.idea\testrunner.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/protected/pythonfiles/.idea/misc.xml" afterPath="$PROJECT_DIR$/doudow/protected/pythonfiles/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/protected/pythonfiles/process.py" afterPath="$PROJECT_DIR$/doudow/protected/pythonfiles/process.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/protected/pythonfiles/.idea/pythonfiles.iml" afterPath="$PROJECT_DIR$/doudow/protected/pythonfiles/.idea/pythonfiles.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/protected/pythonfiles/.idea/workspace.xml" afterPath="$PROJECT_DIR$/doudow/protected/pythonfiles/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yii.iml" afterPath="$PROJECT_DIR$/yii.iml" />
     </list>
     <ignored path="yii.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365749939234" ignored="false" />
-    <file path="/reg.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365492351343" ignored="false" />
-    <file path="/RegisterController.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365494835375" ignored="false" />
-    <file path="/ErrorController.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365492765125" ignored="false" />
-    <file path="/YiiBase.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365495486531" ignored="false" />
-    <file path="/a.dummy" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365505875562" ignored="false" />
-    <file path="/CFileLogRoute.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365494751531" ignored="false" />
-    <file path="/yiilite.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365494925687" ignored="false" />
-    <file path="/CApplication.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365742565734" ignored="false" />
-    <file path="/CComponent.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365500096781" ignored="false" />
-    <file path="/CApplicationComponent.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365499674890" ignored="false" />
-    <file path="/CModule.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365743778015" ignored="false" />
-    <file path="/CWebApplication.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365743226421" ignored="false" />
-    <file path="$PROJECT_DIR$/../game_update/public/gameapp/application/Facade/Joinup/Common/AccLogin.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365505819984" ignored="false" />
-    <file path="/AccLogin.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365505789156" ignored="false" />
-    <file path="$PROJECT_DIR$/../game_update/public/gameapp/application/Facade/Joinup/Common/Regaccount.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365505938250" ignored="false" />
-    <file path="$PROJECT_DIR$/../game_update/public/gameapp/application/Facade/Client.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365505979375" ignored="false" />
-    <file path="/Client.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365505969640" ignored="false" />
-    <file path="$PROJECT_DIR$/../game_update/public/gameapp/library/Moby/Util/PassCrypt.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365506082656" ignored="false" />
-    <file path="/PassCrypt.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365506068609" ignored="false" />
-    <file path="/CPython.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365747695031" ignored="false" />
-    <file path="/index-test.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365745277046" ignored="false" />
-    <file path="/IndexController.php" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365746866000" ignored="false" />
-    <file path="/Pythonserver.py" changelist="f2258390-1240-43af-8600-39a2babdd377" time="1365750225718" ignored="false" />
+    <file path="/Dummy.txt" changelist="1dfd6202-cc58-4ec5-8ebc-b801957d9e4d" time="1365816285097" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +29,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -87,6 +63,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -95,35 +72,7 @@
     <favorites_list name="yii" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CPython.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework/python/CPython.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="24" selection-start="799" selection-end="799" vertical-scroll-proportion="-12.966666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/IndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="53" selection-start="137" selection-end="137" vertical-scroll-proportion="0.10120482">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doudow/protected/config/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="57" selection-start="1505" selection-end="1516" vertical-scroll-proportion="-2.4666667">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -133,41 +82,18 @@
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="DONT" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
   <component name="GitLogSettings">
     <option name="myDateState">
       <MyDateState />
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="changedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/framework/logging/CFileLogRoute.php" />
-        <option value="$PROJECT_DIR$/framework/yiilite.php" />
-        <option value="$PROJECT_DIR$/framework/logging/CLogger.php" />
-        <option value="$PROJECT_DIR$/framework/logging/CLogRouter.php" />
-        <option value="$PROJECT_DIR$/framework/base/CApplicationComponent.php" />
-        <option value="$PROJECT_DIR$/framework/base/CComponent.php" />
-        <option value="$PROJECT_DIR$/doudow/protected/controllers/RegisterController.php" />
-        <option value="$PROJECT_DIR$/doudow/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/framework/base/CApplication.php" />
-        <option value="$PROJECT_DIR$/framework/web/CWebApplication.php" />
-        <option value="$PROJECT_DIR$/framework/base/CModule.php" />
-        <option value="$PROJECT_DIR$/framework/YiiBase.php" />
-        <option value="$PROJECT_DIR$/doudow/index-test.php" />
-        <option value="$PROJECT_DIR$/doudow/protected/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/framework/python/CPython.php" />
-        <option value="$PROJECT_DIR$/doudow/protected/pythonfiles/Pythonserver.py" />
-      </list>
-    </option>
-  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="2" />
-    <option name="width" value="1918" />
-    <option name="height" value="1047" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -197,7 +123,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,84 +174,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yii" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yii" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doudow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yii" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yii" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doudow" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="253" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="255" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="253" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="C:/Python27/libs" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="269" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1053" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1053" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="269" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="255" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="E:/Python27/libs" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -352,9 +218,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -461,14 +324,14 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f2258390-1240-43af-8600-39a2babdd377" name="Default" comment="" />
-      <created>1365490541078</created>
-      <updated>1365490541078</updated>
+      <changelist id="1dfd6202-cc58-4ec5-8ebc-b801957d9e4d" name="Default" comment="" />
+      <created>1365815162889</created>
+      <updated>1365815162889</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="2" width="1918" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -478,21 +341,20 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.50053763" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32663316" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.49569893" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1688172" sideWeight="0.6704162" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17857143" sideWeight="0.67336684" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="101" y="102" width="1718" height="847" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -553,96 +415,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/framework/logging/CLogRoute.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="40" selection-start="1139" selection-end="1139" vertical-scroll-proportion="32.733334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/base/CComponent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="6" selection-start="3710" selection-end="3710" vertical-scroll-proportion="163.26666" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/web/CHttpRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="348" column="20" selection-start="12843" selection-end="12843" vertical-scroll-proportion="0.34516525" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.IntelliJIdea12/config/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core_c.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="6" selection-start="4537" selection-end="4537" vertical-scroll-proportion="0.64819276" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/base/CException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="31" selection-start="418" selection-end="418" vertical-scroll-proportion="0.25301206" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/base/CHttpException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="34" selection-start="596" selection-end="596" vertical-scroll-proportion="-9.1" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/base/CModule.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="448" column="0" selection-start="13941" selection-end="13941" vertical-scroll-proportion="-9.9">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/YiiBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="852" column="11" selection-start="34057" selection-end="34057" vertical-scroll-proportion="0.7172583" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doudow/index-test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.7">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doudow/protected/config/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/web/CWebApplication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="37" selection-start="3155" selection-end="3155" vertical-scroll-proportion="-20.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/base/CApplication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="277" column="39" selection-start="10627" selection-end="10654" vertical-scroll-proportion="-16.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doudow/protected/pythonfiles/Pythonserver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doudow/protected/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="57" selection-start="1505" selection-end="1516" vertical-scroll-proportion="-2.4666667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/python/CPython.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="24" selection-start="799" selection-end="799" vertical-scroll-proportion="-12.966666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="53" selection-start="137" selection-end="137" vertical-scroll-proportion="0.10120482">
+        <state line="5" column="9" selection-start="126" selection-end="127" vertical-scroll-proportion="0.117338">
           <folding />
         </state>
       </provider>

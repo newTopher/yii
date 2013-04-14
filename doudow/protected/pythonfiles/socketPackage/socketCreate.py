@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 import socket
-import process
+import processPackage
 
 class socketCreate():
 
@@ -26,10 +26,10 @@ class socketCreate():
             connection,address=self.sockets.accept()
             print "client's IP:%s, PORT:%d" % address
             try:
-                requestProcess=Process()
-                requestProcess.process(connection)
-            except:
-                pass
+                requestProcess=processPackage.process.Process(connection)
+                requestProcess.start()
+            except TypeError:
+                print "process error"
 
 
 

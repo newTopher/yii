@@ -2,7 +2,8 @@
 class IndexController extends Controller{
 
     public function actionIndex(){
-        Yii::app()->python->python("asfasf","sdfasf");
+        $rs=Yii::app()->python->python("User::validUserName",5);
+		print_r($rs);
     }
 
 
