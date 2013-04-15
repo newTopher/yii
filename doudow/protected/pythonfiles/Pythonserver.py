@@ -4,13 +4,11 @@ import time
 import socketPackage
 import dbUntils
 import sys
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
 
 sys.path.append('.\\userPackage')
 SERVER_LISTENING_PORT=21230
 CHARSET='UTF-8'
-
+dbUntils.dbConnect.dbConnect('mysql','localhost','test','root','root','3306').dbSession
 if __name__ == "__main__":
     print '=========server start=========='
     print 'Time %s',time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time()))
