@@ -2,10 +2,7 @@
 # -*- coding: UTF-8 -*-
 import time
 import socketPackage
-import dbUntils
 import sys
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
 
 sys.path.append('.\\userPackage')
 SERVER_LISTENING_PORT=21230
