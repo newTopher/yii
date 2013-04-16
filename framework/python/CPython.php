@@ -51,12 +51,12 @@ class CPython extends CComponent{
 			$request=substr($request,$sends);
 		}while($sendLen<$requestLen);
 
-		$response = "";
+        $response = "";
 		if (($response = socket_read(self::$_socket,1400)) == false){
 			throw new CException(Yii::t('python',"socket创建失败"));
 		}
 		if ($response == ""){
-			break;
+            throw new CException(Yii::t('python',"接受内容为空"));
 		}
 		$this->close();
 		return $response;
