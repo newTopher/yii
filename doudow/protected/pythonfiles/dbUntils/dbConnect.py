@@ -20,8 +20,8 @@ class dbConnect(object):
             self.dbPort=dbPort
 
             dbconnectStr=self.dbType+'://'+self.dbUser+':'+self.dbPassword+'@'+self.dbHost+'/'+self.dbName+'?charset=utf8'
-            engine=create_engine(dbconnectStr,echo=True)
-            dbSession=scoped_session(sessionmaker(bind=engine))
+            self.engine=create_engine(dbconnectStr,echo=True)
+            dbSession=scoped_session(sessionmaker(bind=self.engine))
             self.session=dbSession()
 
 
@@ -39,6 +39,7 @@ class dbConnect(object):
         #print dbType
 
         self.__dbSession=dbConnect.dbSession(dbType,dbHost,dbName,dbUser,dbPassword,dbPort).dbSession.session
+        self.__dbEngine=dbConnect.dbSession(dbType,dbHost,dbName,dbUser,dbPassword,dbPort).dbSession.engine
 
     def __new__(cls, dbType,dbHost,dbName,dbUser,dbPassword,dbPort):
         if dbConnect.dbInstant == None:
@@ -48,4 +49,7 @@ class dbConnect(object):
 
     def getDbsession(self):
         return self.__dbSession
+
+    def getDbengine(self):
+        return self.__dbEngine
 

@@ -116,7 +116,6 @@ class Process(threading.Thread):
             while (len(reqMsg) < totalLen):
                 reqMsg = reqMsg + self._socket.recv(16 * 1024)    #确保接收完全
             moudleName,methodName,params=self.__parsePythonMoudle(reqMsg)
-
             if moudleName not in self.compileDirct:
                 try:
                     callMoudle=__import__(moudleName)

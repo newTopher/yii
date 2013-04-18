@@ -6,6 +6,8 @@ class base():
 
     def __init__(self):
         self.session=Config.dbsession
+        self.engine=Config.dbengine
+        self.metaData=Config.MetaData()
 
     def query(self):
-        return self.session.execute('show tables').fetchall()
+        pass
