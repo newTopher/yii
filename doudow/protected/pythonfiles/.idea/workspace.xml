@@ -4,8 +4,18 @@
     <list default="true" id="0c135193-a1a8-4a71-b60e-3048af95f505" name="Default" comment="" />
     <ignored path="pythonfiles.iws" />
     <ignored path=".idea/workspace.xml" />
+<<<<<<< HEAD
+    <file path="/Pythonserver.py" changelist="97b70a5f-ccb0-40db-a0f9-bc14ff9eaa3d" time="1366037450405" ignored="false" />
+    <file path="/process.py" changelist="97b70a5f-ccb0-40db-a0f9-bc14ff9eaa3d" time="1365945034162" ignored="false" />
+    <file path="/socketCreate.py" changelist="97b70a5f-ccb0-40db-a0f9-bc14ff9eaa3d" time="1365823792132" ignored="false" />
+    <file path="/__init__.py" changelist="97b70a5f-ccb0-40db-a0f9-bc14ff9eaa3d" time="1365951610487" ignored="false" />
+    <file path="/demo1.py" changelist="97b70a5f-ccb0-40db-a0f9-bc14ff9eaa3d" time="1365946413786" ignored="false" />
+    <file path="/dbPool.py" changelist="97b70a5f-ccb0-40db-a0f9-bc14ff9eaa3d" time="1365950482267" ignored="false" />
+    <file path="/dbConnect.py" changelist="97b70a5f-ccb0-40db-a0f9-bc14ff9eaa3d" time="1366036719496" ignored="false" />
+=======
     <file path="/dbConnect.py" changelist="0c135193-a1a8-4a71-b60e-3048af95f505" time="1366010731265" ignored="false" />
     <file path="/Pythonserver.py" changelist="0c135193-a1a8-4a71-b60e-3048af95f505" time="1366010863078" ignored="false" />
+>>>>>>> origin/master
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +35,8 @@
       <file leaf-file-name="Pythonserver.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Pythonserver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="4" selection-start="200" selection-end="200" vertical-scroll-proportion="0.3272727">
+<<<<<<< HEAD
+            <state line="10" column="54" selection-start="240" selection-end="240" vertical-scroll-proportion="0.47619048">
               <folding>
                 <element signature="e#47#58#0" expanded="true" />
               </folding>
@@ -33,10 +44,38 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbUntils/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="31" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="socketCreate.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/socketPackage/socketCreate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="2" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+              <folding />
+=======
+            <state line="10" column="4" selection-start="200" selection-end="200" vertical-scroll-proportion="0.3272727">
+              <folding>
+                <element signature="e#47#58#0" expanded="true" />
+              </folding>
+>>>>>>> origin/master
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="dbConnect.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbUntils/dbConnect.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state line="18" column="29" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
+=======
             <state line="7" column="12" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+>>>>>>> origin/master
               <folding>
                 <element signature="e#47#83#0" expanded="true" />
               </folding>
@@ -54,6 +93,20 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/socketPackage/__init__.py" />
+        <option value="$PROJECT_DIR$/process.py" />
+        <option value="$PROJECT_DIR$/processPackage/__init__.py" />
+        <option value="$PROJECT_DIR$/socketPackage/socketCreate.py" />
+        <option value="$PROJECT_DIR$/demo1Package/__init__.py" />
+        <option value="$PROJECT_DIR$/demo1.py" />
+        <option value="$PROJECT_DIR$/processPackage/process.py" />
+        <option value="$PROJECT_DIR$/demo1Package/demo1.py" />
+        <option value="$PROJECT_DIR$/userPackage/User.py" />
+        <option value="$PROJECT_DIR$/dbPool/dbPool.py" />
+        <option value="$PROJECT_DIR$/dbUntils/__init__.py" />
+=======
+>>>>>>> origin/master
         <option value="$PROJECT_DIR$/dbUntils/dbConnect.py" />
         <option value="$PROJECT_DIR$/Pythonserver.py" />
       </list>
@@ -132,9 +185,15 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
+<<<<<<< HEAD
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="last_opened_file_path" value="E:/Python27/libs" />
+=======
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.searchVisible" value="true" />
+>>>>>>> origin/master
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Python.Pythonserver">
     <configuration default="false" name="Pythonserver" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -212,11 +271,19 @@
     <frame x="12" y="15" width="1900" height="1021" extended-state="1" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1443769" sideWeight="0.6767169" order="0" side_tool="false" content_ui="combo" />
+=======
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13680781" sideWeight="0.6709154" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> origin/master
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14386536" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -226,6 +293,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -287,9 +355,113 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Pythonserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="14" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#47#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socketPackage/socketCreate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="34" selection-start="319" selection-end="326" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processPackage/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
+          <folding />
+=======
     <entry file="file://$PROJECT_DIR$/dbUntils/dbConnect.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="12" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#47#83#0" expanded="true" />
+          </folding>
+>>>>>>> origin/master
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pythonserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state line="0" column="0" selection-start="0" selection-end="46" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#47#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socketPackage/socketCreate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="40" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processPackage/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processPackage/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socketPackage/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="37" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm20/system/python_stubs/-543320044/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="254" column="15" selection-start="7860" selection-end="7946" vertical-scroll-proportion="2.1994681">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userPackage/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userPackage/User.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="8" selection-start="139" selection-end="147" vertical-scroll-proportion="0.33333334" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processPackage/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="39" selection-start="4649" selection-end="4649" vertical-scroll-proportion="4.3502626">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbUntils/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="31" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socketPackage/socketCreate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="2" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbUntils/dbConnect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="29" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#47#83#0" expanded="true" />
           </folding>
@@ -298,6 +470,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pythonserver.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="54" selection-start="240" selection-end="240" vertical-scroll-proportion="0.47619048">
+          <folding>
+            <element signature="e#47#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+=======
         <state line="10" column="4" selection-start="200" selection-end="200" vertical-scroll-proportion="0.3272727">
           <folding>
             <element signature="e#47#58#0" expanded="true" />
@@ -305,6 +485,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> origin/master
   </component>
 </project>
 
