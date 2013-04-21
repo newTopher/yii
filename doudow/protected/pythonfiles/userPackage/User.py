@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 import base
+import pprint
 
 class User(base.base):
 
@@ -10,28 +11,60 @@ class User(base.base):
         base.base.__init__(self)
         self.userTable=base.Config.Table(
             'dod_user',self.metaData,
-            base.Config.Column('id',base.Config.Integer,primary_key=True),
-            base.Config.Column('username',base.Config.Unicode(32)),
-            base.Config.Column('name',base.Config.Unicode(32)),
-            base.Config.Column('email',base.Config.Unicode(50),unique=True,nullable=False),
-            base.Config.Column('password',base.Config.Unicode(32),nullable=False),
+            base.Config.Column('id',base.Config.Integer,primary_key=True,autoincrement=True),
+            base.Config.Column('username',base.Config.String(32)),
+            base.Config.Column('name',base.Config.String(32)),
+            base.Config.Column('email',base.Config.String(50),unique=True,nullable=False),
+            base.Config.Column('password',base.Config.String(32),nullable=False),
             base.Config.Column('sex',base.Config.Integer,nullable=False),
             base.Config.Column('birthday',base.Config.Integer,nullable=True),
             base.Config.Column('school_id',base.Config.Integer,nullable=False),
-            base.Config.Column('user_sign',base.Config.Unicode(200)),
-            base.Config.Column('details',base.Config.Unicode(300)),
-            base.Config.Column('head_img',base.Config.Unicode(30)),
+            base.Config.Column('user_sign',base.Config.String(200)),
+            base.Config.Column('details',base.Config.String(300)),
+            base.Config.Column('head_img',base.Config.String(30)),
             base.Config.Column('is_active',base.Config.Integer,nullable=False),
-            base.Config.Column('grate',base.Config.Unicode(20)),
+            base.Config.Column('grate',base.Config.String(20)),
         )
         self.metaData.create_all(self.engine)
         if User.mapperInstant == None :
             User.mapperInstant=base.Config.mapper(UserModel,self.userTable)
 
-    def validUserName(self,id):
-        for instant in self.session.query(UserModel).filter_by(id=id[0]):
-            print instant.username
-            return instant.username
+    def validUserName(self,username):
+        query=self.session.query(UserModel).filter_by(username=str(username[0])).first()
+        if query is not None:
+            return False
+        else:
+            return True
+
+    def validEmail(self,email):
+        query=self.session.query(UserModel).filter_by(username=str(email[0])).first()
+        if query is not None:
+            return False
+        else:
+            return True
+
+
+    def userReg(self,postData):
+        userModel=UserModel()
+        userModel.username=postData[0]['username']
+        userModel.name=postData[0]['name']
+        userModel.email=postData[0]['email']
+        userModel.password=postData[0]['password']
+        userModel.sex=postData[0]['sex']
+        userModel.birthday=postData[0]['birthday']
+        userModel.school_id=postData[0]['school_id']
+        userModel.user_sign=postData[0]['user_sign']
+        userModel.details=postData[0]['details']
+        userModel.head_img=postData[0]['head_img']
+        userModel.is_active=postData[0]['is_active']
+        userModel.grate=postData[0]['grate']
+        try:
+            pprint.pprint(self.session.add(userModel))
+            self.session.flush()
+            self.session.commit()
+            return '添加成功'
+        except:
+            return '添加失败'
 
 
 
