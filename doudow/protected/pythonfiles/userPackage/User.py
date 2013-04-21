@@ -59,12 +59,18 @@ class User(base.base):
         userModel.is_active=postData[0]['is_active']
         userModel.grate=postData[0]['grate']
         try:
-            pprint.pprint(self.session.add(userModel))
+            self.session.add(userModel)
             self.session.flush()
             self.session.commit()
-            return '添加成功'
+            return int(userModel.id)
         except:
-            return '添加失败'
+            return int(0)
+
+
+
+    def userLogin(self,postData):
+        userModel=UserModel()
+
 
 
 

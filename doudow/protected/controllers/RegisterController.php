@@ -62,7 +62,16 @@ class RegisterController extends Controller{
 
         $resource=Yii::app()->python->python("User::userReg",$postData);
 
-        print_r($resource);
+        if(!$resource){
+            $result['code']=-1;
+            $result['msg']='register fail';
+        }else{
+            $result['code']=0;
+            $result['msg']='register success';
+            $result['data']=array('id'=>$resource);
+        }
+
+        return $this->rebackData($result);
 
 
     }

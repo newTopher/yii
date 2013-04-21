@@ -9,7 +9,7 @@
          name:<?php echo CHtml::textField('name');  ?><br>
          sex:<?php echo CHtml::radioButtonList('sex','1',array(1=>'男',2=>'女'));  ?><br>
          school:<?php echo CHtml::textField('school_id');  ?><br>
-         grade:<?php echo CHtml::textField('grate');  ?><br>
+         grate:<?php echo CHtml::textField('grate');  ?><br>
          birthday:<?php echo CHtml::textField('birthday');  ?><br>
          <?php echo CHtml::submitButton('register');  ?>
          <?php echo CHtml::endForm();    ?>
