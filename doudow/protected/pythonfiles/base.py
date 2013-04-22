@@ -11,3 +11,7 @@ class base():
 
     def query(self):
         pass
+
+    def output(self,msg):
+        print msg
+        return str(msg)
