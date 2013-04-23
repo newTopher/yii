@@ -71,9 +71,14 @@ class User(base.base):
     def userLogin(self,postData):
         print postData
         userModel=UserModel()
-        query=self.session.query(UserModel).filter_by(password=str(postData[0]['password']))
-        for instant in query:
-            if str(postData[0]['username']) == instant.username:
+        passQuery=self.session.query(UserModel).filter_by(password=str(postData[0]['password']))
+        if passQuery is not None:
+            usernameList=[instant.email for instant in passQuery]
+            if postData[0]['email'] in usernameList:
+                emailQuery=self.session.query(UserModel).filter_by(email=str(postData[0]['email'])).first()
+                if emailQuery is not None:
+                    return {}
+
 
 
 
