@@ -72,4 +72,5 @@ class Controller extends CController
             echo $this->encode($array);
         }
     }
+
 }

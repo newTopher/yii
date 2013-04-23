@@ -4,10 +4,14 @@
  */
 class CPython extends CComponent{
 
-    private static $_socket;
+    private $_socket;
 
     public function init(){
 
+    }
+
+    public function __destruct(){
+        $this->_socket=null;
     }
 
     public function python(){
@@ -19,22 +23,23 @@ class CPython extends CComponent{
         if(!is_string($argsArray[0])){
             throw new CException(Yii::t('python',"第一二个参数为python模块参数必须为字符串"));
         }
-        if(self::$_socket===null){
-            self::createSocket();
+        if($this->_socket===null){
+            $this->createSocket();
         }
-        if(socket_connect(self::$_socket,PYTHON_SERVER_HOST,PYTHON_SERVER_PORT) === false){
+        if(socket_connect($this->_socket,PYTHON_SERVER_HOST,PYTHON_SERVER_PORT) === false){
             throw new CException(Yii::t('python',"socket连接失败"));
         }
         $request=serialize($argsArray);
         $requestLen=strlen($request);
         $request=$requestLen.','.$request;
 		$response=$this->sends($request);
+        $this->_socket=null;
 		return $this->response($response);		
     }
 
-    private static function createSocket(){
+    private function createSocket(){
         try{
-            self::$_socket=socket_create(AF_INET,SOCK_STREAM,0);
+            $this->_socket=socket_create(AF_INET,SOCK_STREAM,0);
         }catch (CException $e){
             throw new CException(Yii::t('python',"socket创建失败"));
         }
@@ -44,7 +49,7 @@ class CPython extends CComponent{
 		$requestLen=strlen($request);
 		$sendLen=0;
 		do{
-			if(($sends=socket_write(self::$_socket,$request,strlen($request))) === false){
+			if(($sends=socket_write($this->_socket,$request,strlen($request))) === false){
 				throw new CException(Yii::t('python',SOCKET_ERROR));
 			}
 			$sendLen+=$sends;
@@ -52,7 +57,7 @@ class CPython extends CComponent{
 		}while($sendLen<$requestLen);
 
         $response = "";
-		if (($response = socket_read(self::$_socket,1400)) == false){
+		if (($response = socket_read($this->_socket,1400)) == false){
 			throw new CException(Yii::t('python',"socket创建失败"));
 		}
 		if ($response == ""){
@@ -76,7 +81,7 @@ class CPython extends CComponent{
 
 
 	private function close(){
-		socket_close(self::$_socket);
+		socket_close($this->_socket);
 	}
 
 

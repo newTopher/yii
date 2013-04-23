@@ -37,7 +37,7 @@ class User(base.base):
             return True
 
     def validEmail(self,email):
-        query=self.session.query(UserModel).filter_by(username=str(email[0])).first()
+        query=self.session.query(UserModel).filter_by(email=str(email[0])).first()
         if query is not None:
             return False
         else:
@@ -69,7 +69,12 @@ class User(base.base):
 
 
     def userLogin(self,postData):
+        print postData
         userModel=UserModel()
+        query=self.session.query(UserModel).filter_by(password=str(postData[0]['password']))
+        for instant in query:
+            if str(postData[0]['username']) == instant.username:
+
 
 
 

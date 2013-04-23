@@ -59,6 +59,17 @@ class RegisterController extends Controller{
         $postData['head_img']='';
         $postData['is_active']=0;
 
+        if(!Yii::app()->python->python("User::validUserName",$postData['username'])){
+            $result['code']=-1;
+            $result['msg']='register fail,username is exists';
+            return $this->rebackData($result);
+        }
+
+        if(!Yii::app()->python->python("User::validEmail",$postData['email'])){
+            $result['code']=-1;
+            $result['msg']='register fail,email is exists';
+            return $this->rebackData($result);
+        }
 
         $resource=Yii::app()->python->python("User::userReg",$postData);
 
