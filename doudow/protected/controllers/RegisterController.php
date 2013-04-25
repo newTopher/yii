@@ -41,6 +41,19 @@ class RegisterController extends Controller{
     }
 
     /*
+     * 根据城市获取学校列表
+     */
+    public function actionSchoolList($cid){
+        if(!empty($cid) && is_numeric($cid)){
+            $resource=Yii::app()->python->python("School::schoolList",$cid);
+            $result['code']=1;
+            $result['msg']='success';
+            $result['data']=$resource;
+            return $this->rebackData($result);
+        }
+    }
+
+    /*
      * 注册方法
      */
     public function actionReg(){

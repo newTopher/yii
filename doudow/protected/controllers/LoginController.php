@@ -21,7 +21,16 @@ class LoginController extends Controller{
         $postData['password']=Yii::app()->request->getParam('password');
 
         $resource=Yii::app()->python->python("User::userLogin",$postData);
-        print_r($resource);
+        if(is_array($resource)){
+            $result['code']=0;
+            $result['msg']='login success';
+            $result['data']=$resource;
+        }else{
+            $result['code']=-1;
+            $result['msg']='login fail,username or password error';
+        }
+
+        return $this->rebackData($result);
 
     }
 

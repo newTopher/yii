@@ -4,7 +4,11 @@ import time
 import socketPackage
 import sys
 
+reload(sys)
+
+sys.setdefaultencoding('utf8')
 sys.path.append('.\\userPackage')
+sys.path.append('.\\schoolPackage')
 SERVER_LISTENING_PORT=21230
 CHARSET='UTF-8'
 

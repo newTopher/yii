@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 import base
-import pprint
 
 class User(base.base):
 
@@ -69,15 +68,20 @@ class User(base.base):
 
 
     def userLogin(self,postData):
-        print postData
-        userModel=UserModel()
         passQuery=self.session.query(UserModel).filter_by(password=str(postData[0]['password']))
         if passQuery is not None:
             usernameList=[instant.email for instant in passQuery]
             if postData[0]['email'] in usernameList:
                 emailQuery=self.session.query(UserModel).filter_by(email=str(postData[0]['email'])).first()
                 if emailQuery is not None:
-                    return {}
+                    del emailQuery.__dict__['_sa_instance_state']
+                    return emailQuery.__dict__
+                else:
+                    return -1
+            else:
+                return -1
+        else:
+            return -1
 
 
 
