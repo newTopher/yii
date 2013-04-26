@@ -9,6 +9,7 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 sys.path.append('.\\userPackage')
 sys.path.append('.\\schoolPackage')
+sys.path.append('.\\weiboPackage')
 SERVER_LISTENING_PORT=21230
 CHARSET='UTF-8'
 

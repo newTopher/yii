@@ -5,7 +5,7 @@
 class IcenterController extends Controller{
 
 
-     public function actionicenter(){
+     public function actionIcenter(){
          $this->render('icenter');
      }
 
@@ -21,9 +21,15 @@ class IcenterController extends Controller{
          }
          $videoUrl="http://www.youku.com";
          $musicUrl="http://www.mp3.com";
-         $other=array('videoUrl'=>$videoUrl,'musicUrl'=>$musicUrl);
-         $postData['other_attr']=$this->encode($other);
-         print_r($postData['other_attr']);
+         if($videoUrl || $musicUrl){
+             $other=array('videoUrl'=>$videoUrl,'musicUrl'=>$musicUrl);
+             $postData['other_attr']=$this->encode($other);
+         }
+         $postData['source']='Android';
+
+         $resource=Yii::app()->python->python("Weibo::publishNewWeibo",$postData);
+
+         print_r($resource);
 
      }
 }

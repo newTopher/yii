@@ -23,6 +23,9 @@ class User(base.base):
             base.Config.Column('head_img',base.Config.String(30)),
             base.Config.Column('is_active',base.Config.Integer,nullable=False),
             base.Config.Column('grate',base.Config.String(20)),
+            base.Config.Column('followers_counts',base.Config.Integer,default=0),
+            base.Config.Column('follow_me',base.Config.SmallInteger(4),default=0),
+            base.Config.Column('attention_counts',base.Config.Integer,default=0),
         )
         self.metaData.create_all(self.engine)
         if User.mapperInstant == None :
@@ -82,6 +85,34 @@ class User(base.base):
                 return -1
         else:
             return -1
+
+
+    def getUser(self,id):
+        userQuery=self.session.query(UserModel).filter_by(id=int(id[0])).first()
+        if userQuery is not None:
+            del userQuery.__dict__['_sa_instance_state']
+            return userQuery.__dict__
+        else:
+            return -1
+
+
+
+
+
+
+class UserAttrInfo():
+
+    __tablename__='dod_user_attrinfo'
+
+    uid=base.Config.Column(base.Config.Integer,primary_key=True)
+    en_name=base.Config.Column(base.Config.VARCHAR(20),nullable=True)
+    constellation=base.Config.Column(base.Config.VARCHAR(20),nullable=True)
+    province_id=base.Config.Column(base.Config.Integer,nullable=True)
+    city_id=base.Config.Column(base.Config.Integer,nullable=True)
+    location=base.Config.Column(base.Config.VARCHAR(32),nullable=True)
+
+
+
 
 
 
