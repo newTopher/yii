@@ -39,15 +39,16 @@ class Weibo(base.base):
             self.session.commit()
 
             try:
-                weiboBackData=list()
-                weiboBackData.append(int(weiboModel.w_id))
-                weiboBackData.append(int(weiboModel.create_time))
-                weiboBackData.append(str(weiboModel.text))
-                weiboBackData.append(int(weiboModel.reposts_counts))
-                weiboBackData.append(int(weiboModel.comments_counts))
-                weiboBackData.append(str(weiboModel.pics))
-                weiboBackData.append(str(weiboModel.other_attr))
-                weiboBackData.append(str(weiboModel.source))
+                weiboBackData=dict()
+                weiboBackData['w_id']=int(weiboModel.w_id)
+                weiboBackData['uid']=int(weiboModel.uid)
+                weiboBackData['create_time']=int(weiboModel.create_time)
+                weiboBackData['text']=str(weiboModel.text)
+                weiboBackData['reposts_counts']=int(weiboModel.reposts_counts)
+                weiboBackData['comments_counts']=int(weiboModel.comments_counts);
+                weiboBackData['pics']=str(weiboModel.pics)
+                weiboBackData['other_attr']=str(weiboModel.other_attr)
+                weiboBackData['source']=str(weiboModel.source)
 
                 return weiboBackData
             except:

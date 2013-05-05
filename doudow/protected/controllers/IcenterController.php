@@ -27,9 +27,24 @@ class IcenterController extends Controller{
          }
          $postData['source']='Android';
 
-         $resource=Yii::app()->python->python("Weibo::publishNewWeibo",$postData);
+         $resourceWeibo=Yii::app()->python->python("Weibo::publishNewWeibo",$postData);
+		 if(is_array($resourceWeibo)){
+			$resourceUser=Yii::app()->python->python("User::getUser",$resourceWeibo['uid']);
+			if(is_array($resourceUser)){
+				$resourceWeibo['user']=$resourceUser;
+				$result['code']=0;
+				$result['msg']='publish weibo success';
+				$result['data']=$resourceWeibo;
+			}else{
+				$result['code']=$resourceWeibo;
+				$result['msg']='get user info error';
+			}
+		 }else{
+			$result['code']=$resourceWeibo;
+            $result['msg']='publish weibo error';	
+		 }
 
-         print_r($resource);
+         return $this->rebackData($result);
 
      }
 }

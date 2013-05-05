@@ -4,7 +4,8 @@ import base
 
 class User(base.base):
 
-    mapperInstant=None
+    mapperInstantUser=None
+    mapperInstantUserAttrInfo=None
 
     def __init__(self):
         base.base.__init__(self)
@@ -27,9 +28,23 @@ class User(base.base):
             base.Config.Column('follow_me',base.Config.SmallInteger(4),default=0),
             base.Config.Column('attention_counts',base.Config.Integer,default=0),
         )
+
+        self.userattrinfoTable=base.Config.Table(
+            'dod_user_attrinfo',self.metaData,
+            base.Config.Column('uid',base.Config.Integer,primary_key=True),
+            base.Config.Column('en_name',base.Config.VARCHAR(20),nullable=True),
+            base.Config.Column('constellation',base.Config.VARCHAR(20),nullable=True),
+            base.Config.Column('province_id',base.Config.Integer,nullable=True),
+            base.Config.Column('city_id',base.Config.Integer,nullable=True),
+            base.Config.Column('location',base.Config.VARCHAR(32),nullable=True)
+        )
+
         self.metaData.create_all(self.engine)
-        if User.mapperInstant == None :
-            User.mapperInstant=base.Config.mapper(UserModel,self.userTable)
+        if User.mapperInstantUser == None :
+            User.mapperInstantUser=base.Config.mapper(UserModel,self.userTable)
+
+        if User.mapperInstantUserAttrInfo == None :
+            User.mapperInstantUserAttrInfo=base.Config.mapper(UserAttrInfoModel,self.userattrinfoTable)
 
     def validUserName(self,username):
         query=self.session.query(UserModel).filter_by(username=str(username[0])).first()
@@ -88,40 +103,24 @@ class User(base.base):
 
 
     def getUser(self,id):
-        userQuery=self.session.query(UserModel).filter_by(id=int(id[0])).first()
+        userQuery=self.session.query(UserModel,UserAttrInfoModel).filter(UserAttrInfoModel.uid==UserModel.id).filter(UserModel.id==int(id[0])).first()
         if userQuery is not None:
-            del userQuery.__dict__['_sa_instance_state']
-            return userQuery.__dict__
+            mergeDict=dict();
+            mergeDict=userQuery.UserModel.__dict__.copy()
+            mergeDict.update(userQuery.UserAttrInfoModel.__dict__)
+            del mergeDict['_sa_instance_state']
+            mergeDict=self.formatDict(mergeDict)
+            return mergeDict
         else:
             return -1
-
-
-
-
-
-
-class UserAttrInfo():
-
-    __tablename__='dod_user_attrinfo'
-
-    uid=base.Config.Column(base.Config.Integer,primary_key=True)
-    en_name=base.Config.Column(base.Config.VARCHAR(20),nullable=True)
-    constellation=base.Config.Column(base.Config.VARCHAR(20),nullable=True)
-    province_id=base.Config.Column(base.Config.Integer,nullable=True)
-    city_id=base.Config.Column(base.Config.Integer,nullable=True)
-    location=base.Config.Column(base.Config.VARCHAR(32),nullable=True)
-
-
-
-
-
-
 
 
 
 class UserModel(object):
     pass
 
+class UserAttrInfoModel(object):
+    pass
 
 
 

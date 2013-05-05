@@ -15,3 +15,8 @@ class base():
     def output(self,msg):
         print msg
         return str(msg)
+
+    def formatDict(self,dict):
+        for (k,v) in dict.items():
+            dict[k]=str(v)
+        return dict
