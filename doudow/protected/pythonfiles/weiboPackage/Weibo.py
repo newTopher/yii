@@ -57,5 +57,44 @@ class Weibo(base.base):
             return -1
 
 
+    def repostWeibo(self,postData):
+        weiboModel=WeiboModel()
+        weiboModel.uid=int(postData[0]['uid'])
+        weiboModel.text=str(postData[0]['text'])
+        weiboModel.retweeted_status=int(postData[0]['w_id']);
+        weiboModel.create_time=int(postData[0]['create_time'])
+        weiboModel.source=str(postData[0]['source'])
+
+        try:
+            self.session.add(weiboModel)
+            self.session.flush()
+            self.session.commit()
+
+            try:
+                weiboBackData=dict()
+                weiboBackData['w_id']=int(weiboModel.w_id)
+                weiboBackData['uid']=int(weiboModel.uid)
+                weiboBackData['create_time']=int(weiboModel.create_time)
+                weiboBackData['text']=str(weiboModel.text)
+                weiboBackData['source']=str(weiboModel.source)
+
+                return weiboBackData
+            except:
+                return -2
+        except:
+            return -1
+
+    def destroyWeibo(self,wid):
+        try:
+            self.session.query(WeiboModel).filter(WeiboModel.w_id==int(wid[0])).delete()
+            self.session.flush()
+            return True
+        except:
+            return False
+
+
+
+
+
 class WeiboModel(object):
     pass

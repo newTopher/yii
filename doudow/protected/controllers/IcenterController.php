@@ -47,4 +47,35 @@ class IcenterController extends Controller{
          return $this->rebackData($result);
 
      }
+
+     public function actionRepostWeibo(){
+         $postData['uid']=Yii::app()->request->getParam('uid');
+         $postData['text']=urlencode(Yii::app()->request->getParam('weibocontents'));
+         $postData['create_time']=time();
+         $postData['w_id']=7;
+         $postData['source']='Android';
+         $resourceWeibo=Yii::app()->python->python("Weibo::repostWeibo",$postData);
+         if(is_array($resourceWeibo)){
+            $result['msg']='repost weibo success';
+            $result['data']=$resourceWeibo;
+         }else{
+            $result['code']=$resourceWeibo;
+            $result['msg']='publish weibo error';
+         }
+
+         return $this->rebackData($result);
+
+     }
+
+     public function actionDestroyWeibo(){
+         $wid=Yii::app()->request->getParam('w_id');
+         $resourceWeibo=Yii::app()->python->python("Weibo::destroyWeibo",$wid);
+         if($resourceWeibo){
+             $result['code']=0;
+             $result['msg']='delete weibo success';
+         }else{
+             $result['msg']='delete weibo fail';
+         }
+         return $this->rebackData($result);
+     }
 }
