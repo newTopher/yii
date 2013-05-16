@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd98a0a8-4046-426b-8af4-a1c6297f5a34" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/framework/caching/CMemCache.php" afterPath="$PROJECT_DIR$/framework/caching/CMemCache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/protected/controllers/IcenterController.php" afterPath="$PROJECT_DIR$/doudow/protected/controllers/IcenterController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/protected/pythonfiles/weiboPackage/Weibo.py" afterPath="$PROJECT_DIR$/doudow/protected/pythonfiles/weiboPackage/Weibo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/protected/views/icenter/icenter.php" afterPath="$PROJECT_DIR$/doudow/protected/views/icenter/icenter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/protected/controllers/IndexController.php" afterPath="$PROJECT_DIR$/doudow/protected/controllers/IndexController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/index-test.php" afterPath="$PROJECT_DIR$/doudow/index-test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/protected/config/main.php" afterPath="$PROJECT_DIR$/doudow/protected/config/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doudow/protected/pythonfiles/.idea/workspace.xml" afterPath="$PROJECT_DIR$/doudow/protected/pythonfiles/.idea/workspace.xml" />
     </list>
     <ignored path="yii.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368509909671" ignored="false" />
+    <file path="/Dummy.txt" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368668195046" ignored="false" />
     <file path="/Controller.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1366705674328" ignored="false" />
     <file path="/CController.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1366592285656" ignored="false" />
     <file path="/a.dummy" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368096268093" ignored="false" />
@@ -31,7 +31,7 @@
     <file path="/Main.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1366955582843" ignored="false" />
     <file path="$PROJECT_DIR$/../uptools/application/Index/Model/Admin.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1366956320156" ignored="false" />
     <file path="/Admin.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1366956283140" ignored="false" />
-    <file path="/IcenterController.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368524715468" ignored="false" />
+    <file path="/IcenterController.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368698405062" ignored="false" />
     <file path="$PROJECT_DIR$/../game_update/public/gameapp/application/Facade/Normal/Getpayurl.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368096249640" ignored="false" />
     <file path="/Getpayurl.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368096249640" ignored="false" />
     <file path="$PROJECT_DIR$/../game_update/public/gameapp/application/Config/facade.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368096241671" ignored="false" />
@@ -39,9 +39,39 @@
     <file path="/AppForApi.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368096406750" ignored="false" />
     <file path="$PROJECT_DIR$/../game_update/public/gameapp/application/Facade/Normal/Getmsgurl.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368098862859" ignored="false" />
     <file path="/Getmsgurl.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368098785125" ignored="false" />
-    <file path="$PROJECT_DIR$/../17app/17app/Lib/Action/IndexAction.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368514450187" ignored="false" />
-    <file path="$PROJECT_DIR$/../17app/17app/Tpl/Index/index.html" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368519393250" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/17app/Lib/Action/IndexAction.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368690117609" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/17app/Tpl/Index/index.html" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368606413875" ignored="false" />
     <file path="/index.html" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368519367828" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/17app/Tpl/Data/activeList.html" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368695037250" ignored="false" />
+    <file path="/activeList.html" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368672655500" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/17app/Lib/Action/DataAction.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368695171812" ignored="false" />
+    <file path="/DataAction.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368695126718" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/17app/Lib/Model/DataModel.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368669489937" ignored="false" />
+    <file path="/DataModel.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368610216203" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/17app/Lib/Model/GamesModel.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368611158109" ignored="false" />
+    <file path="/GamesModel.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368609477406" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/17app/Lib/Model/RelationModel.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368612250812" ignored="false" />
+    <file path="/RelationModel.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368612038343" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/ThinkPHP/Lib/Core/Model.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368690298250" ignored="false" />
+    <file path="/Model.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368683918671" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/ThinkPHP/Lib/Core/Db.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368690719390" ignored="false" />
+    <file path="/Db.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368690705953" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/ThinkPHP/Conf/convention.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368668449046" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/17app/Tpl/Public/common.html" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368673303531" ignored="false" />
+    <file path="/common.html" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368673173312" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/17app/Tpl/Data/registerList.html" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368673520578" ignored="false" />
+    <file path="/main.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368697217968" ignored="false" />
+    <file path="/IndexController.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368697882640" ignored="false" />
+    <file path="/CMemCache.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368698013718" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/17app/Lib/Action/CommonAction.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368693250484" ignored="false" />
+    <file path="/CommonAction.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368690154375" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/17app/Lib/Action/TestAction.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368690123078" ignored="false" />
+    <file path="/IndexAction.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368690117609" ignored="false" />
+    <file path="/TestAction.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368690123078" ignored="false" />
+    <file path="$PROJECT_DIR$/../17app/ThinkPHP/Lib/Driver/Db/DbPdo.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368694746468" ignored="false" />
+    <file path="/DbPdo.class.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368693696218" ignored="false" />
+    <file path="/index-test.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368697449750" ignored="false" />
+    <file path="/test.php" changelist="dd98a0a8-4046-426b-8af4-a1c6297f5a34" time="1368697929171" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +133,43 @@
       <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="22" selection-start="96" selection-end="106" vertical-scroll-proportion="0.0">
+            <state line="5" column="10" selection-start="161" selection-end="161" vertical-scroll-proportion="-3.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doudow/protected/config/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="28" selection-start="376" selection-end="376" vertical-scroll-proportion="-8.4">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index-test.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doudow/index-test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="48" selection-start="316" selection-end="316" vertical-scroll-proportion="-7.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doudow/protected/config/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="10" selection-start="324" selection-end="324" vertical-scroll-proportion="-9.8">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CCache.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework/caching/CCache.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="172" column="44" selection-start="7211" selection-end="7212" vertical-scroll-proportion="-41.6">
               <folding />
             </state>
           </provider>
@@ -112,25 +178,7 @@
       <file leaf-file-name="RegisterController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/RegisterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="36" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CPython.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework/python/CPython.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="28" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doudow/protected/views/login/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="11" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+            <state line="4" column="36" selection-start="57" selection-end="57" vertical-scroll-proportion="10.833333">
               <folding />
             </state>
           </provider>
@@ -139,16 +187,25 @@
       <file leaf-file-name="IcenterController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/IcenterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="93" selection-start="2203" selection-end="2203" vertical-scroll-proportion="0.56987953">
+            <state line="51" column="65" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.43493977">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="icenter.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/doudow/protected/views/icenter/icenter.php">
+      <file leaf-file-name="CMemCache.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework/caching/CMemCache.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="41" selection-start="258" selection-end="258" vertical-scroll-proportion="-6.3">
+            <state line="221" column="9" selection-start="7407" selection-end="7412" vertical-scroll-proportion="-11.9">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CPython.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework/python/CPython.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="28" selection-start="946" selection-end="946" vertical-scroll-proportion="-0.7">
               <folding />
             </state>
           </provider>
@@ -180,14 +237,19 @@
         <option value="$PROJECT_DIR$/doudow/protected/controllers/RegisterController.php" />
         <option value="$PROJECT_DIR$/doudow/protected/controllers/WeiboController.php" />
         <option value="$PROJECT_DIR$/doudow/protected/views/icenter/icenter.php" />
+        <option value="$PROJECT_DIR$/doudow/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/doudow/index-test.php" />
+        <option value="$PROJECT_DIR$/doudow/protected/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/framework/caching/CMemCache.php" />
+        <option value="$PROJECT_DIR$/doudow/protected/config/test.php" />
         <option value="$PROJECT_DIR$/doudow/protected/controllers/IcenterController.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="2" />
+    <option name="x" value="-24" />
+    <option name="y" value="14" />
     <option name="width" value="1918" />
     <option name="height" value="1047" />
   </component>
@@ -220,7 +282,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,6 +297,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caching" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -341,8 +434,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doudow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,7 +466,7 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../17app" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -388,19 +504,6 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -427,6 +530,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -481,12 +597,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="2" width="1918" height="1047" extended-state="0" />
+    <frame x="-24" y="14" width="1918" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -504,7 +621,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -565,40 +681,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/doudow/protected/views/register/reg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="835" vertical-scroll-proportion="-0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.IntelliJIdea12/config/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/sockets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1093" column="8" selection-start="32670" selection-end="32670" vertical-scroll-proportion="0.3448276" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/python/CPython.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="28" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="167" selection-end="167" vertical-scroll-proportion="0.1510107">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doudow/protected/pythonfiles/Pythonserver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doudow/protected/pythonfiles/Config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doudow/protected/pythonfiles/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -619,42 +701,86 @@
         <state line="5" column="6" selection-start="158" selection-end="158" vertical-scroll-proportion="-0.8977408" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/caching/CMemCache.php">
+    <entry file="file://$PROJECT_DIR$/doudow/protected/views/icenter/icenter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.7173915" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="96" selection-end="106" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="36" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
+        <state line="9" column="41" selection-start="258" selection-end="258" vertical-scroll-proportion="0.22771084">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doudow/protected/views/login/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0">
+        <state line="9" column="161" selection-start="342" selection-end="342" vertical-scroll-proportion="0.22771084">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doudow/protected/views/icenter/icenter.php">
+    <entry file="file://$PROJECT_DIR$/framework/python/CPython.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="41" selection-start="258" selection-end="258" vertical-scroll-proportion="-6.3">
+        <state line="35" column="28" selection-start="946" selection-end="946" vertical-scroll-proportion="-0.7">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.IntelliJIdea12/config/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/memcached.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="436" column="20" selection-start="12970" selection-end="12970" vertical-scroll-proportion="0.64819276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="36" selection-start="57" selection-end="57" vertical-scroll-proportion="10.833333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/caching/CCache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="44" selection-start="7211" selection-end="7212" vertical-scroll-proportion="-41.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doudow/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="28" selection-start="376" selection-end="376" vertical-scroll-proportion="-8.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="10" selection-start="161" selection-end="161" vertical-scroll-proportion="-3.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doudow/index-test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="48" selection-start="316" selection-end="316" vertical-scroll-proportion="-7.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doudow/protected/config/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="10" selection-start="324" selection-end="324" vertical-scroll-proportion="-9.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/caching/CMemCache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="221" column="9" selection-start="7407" selection-end="7412" vertical-scroll-proportion="-11.9">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/doudow/protected/controllers/IcenterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="93" selection-start="2203" selection-end="2203" vertical-scroll-proportion="0.56987953">
+        <state line="51" column="65" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.43493977">
           <folding />
         </state>
       </provider>

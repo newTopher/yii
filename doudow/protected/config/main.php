@@ -61,6 +61,17 @@ return array(
 			'charset' => 'utf8',
 		),
 
+        'memcache'=>array(
+            'class'=>'CMemCache',
+            'servers'=>array(
+                array(
+                    'host'=>'127.0.0.1',
+                    'port'=>11211
+                ),
+
+            ),
+        ),
+
         /**/
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors

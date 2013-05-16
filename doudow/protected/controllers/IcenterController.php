@@ -49,18 +49,29 @@ class IcenterController extends Controller{
      }
 
      public function actionRepostWeibo(){
-         $postData['uid']=Yii::app()->request->getParam('uid');
+         $postData['uid']=Yii::app()->request->getParam('uid','10');
          $postData['text']=urlencode(Yii::app()->request->getParam('weibocontents'));
          $postData['create_time']=time();
          $postData['w_id']=7;
          $postData['source']='Android';
-         $resourceWeibo=Yii::app()->python->python("Weibo::repostWeibo",$postData);
-         if(is_array($resourceWeibo)){
-            $result['msg']='repost weibo success';
-            $result['data']=$resourceWeibo;
+         if(defined('OPEN_MEMCACHE')){
+             $memcache=Yii::app()->memcache->getMemcache();
+             $key=Yii::app()->memcache->createKey();
+             if($memcache->set($key,$postData)){
+                 $result=$memcache->get($key);
+             }else{
+                 $result['code']=-1;
+                 $result['msg']='memcache error';
+             }
          }else{
-            $result['code']=$resourceWeibo;
-            $result['msg']='publish weibo error';
+             $resourceWeibo=Yii::app()->python->python("Weibo::repostWeibo",$postData);
+             if(is_array($resourceWeibo)){
+                $result['msg']='repost weibo success';
+                $result['data']=$resourceWeibo;
+             }else{
+                $result['code']=$resourceWeibo;
+                $result['msg']='publish weibo error';
+             }
          }
 
          return $this->rebackData($result);

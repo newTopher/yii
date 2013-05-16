@@ -218,6 +218,10 @@ class CMemCache extends CCache
 	{
 		return $this->_cache->flush();
 	}
+
+    public function createKey(){
+        return md5(time());
+    }
 }
 
 /**
