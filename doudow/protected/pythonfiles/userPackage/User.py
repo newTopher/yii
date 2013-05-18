@@ -93,7 +93,7 @@ class User(base.base):
                 emailQuery=self.session.query(UserModel).filter_by(email=str(postData[0]['email'])).first()
                 if emailQuery is not None:
                     del emailQuery.__dict__['_sa_instance_state']
-                    return emailQuery.__dict__
+                    return self.formatDict(emailQuery.__dict__)
                 else:
                     return -1
             else:

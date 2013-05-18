@@ -67,7 +67,7 @@ class Controller extends CController
 
     public function rebackData($array,$data=null,$type=self::OUTREQUEST){
         if($data != null && $type=self::INNERREQUST){
-           print_r($data);
+           return $data;
         }else{
             echo $this->encode($array);
         }

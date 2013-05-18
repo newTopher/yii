@@ -21,16 +21,24 @@ class LoginController extends Controller{
         $postData['password']=Yii::app()->request->getParam('password');
 
         $resource=Yii::app()->python->python("User::userLogin",$postData);
-        if(is_array($resource)){
-            $result['code']=0;
-            $result['msg']='login success';
-            $result['data']=$resource;
+        if(defined('REST')){
+            if(is_array($resource)){
+                $result['code']=0;
+                $result['msg']='login success';
+                $result['data']=$resource;
+            }else{
+                $result['code']=-1;
+                $result['msg']='login fail,username or password error';
+            }
+            return $this->rebackData($result);
         }else{
-            $result['code']=-1;
-            $result['msg']='login fail,username or password error';
+            if(is_array($resource)){
+                Yii::app()->session['uid']=$resource;
+                $this->redirect(array('icenter/icenter'));
+            }else{
+                throw new CException(Yii::t('yii','login error'));
+            }
         }
-
-        return $this->rebackData($result);
 
     }
 
