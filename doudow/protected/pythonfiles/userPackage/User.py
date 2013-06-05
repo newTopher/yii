@@ -114,6 +114,13 @@ class User(base.base):
         else:
             return -1
 
+    def getUserNickName(self,id):
+        query=self.session.query(UserModel).filter(UserModel.id==int(id[0])).first()
+        if query is not None:
+            return str(query.username)
+        else:
+            return -1
+
 
 
 class UserModel(object):

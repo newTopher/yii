@@ -92,6 +92,23 @@ class Weibo(base.base):
         except:
             return False
 
+    def getCurrNewWeiboList(self,postData):
+        try:
+            query=self.session.query(WeiboModel).filter(WeiboModel.uid.in_(postData[0]['attentionUserList'])).order_by('create_time DESC').offset(0).limit(50)
+            if query is not None:
+                #weiboList=[[int(instant.w_id),int(instant.uid),int(instant.reposts_counts),int(instant.comments_counts),str(instant.text),int(instant.create_time),str(instant.pics),str(instant.other_attr),str(instant.source)] for instant in query]
+                weiboList=list()
+                for instant in query:
+                    del instant.__dict__['_sa_instance_state']
+                    weiboList.append(self.formatDict(instant.__dict__))
+                return weiboList
+        except:
+            return -1
+
+
+
+
+
 
 
 

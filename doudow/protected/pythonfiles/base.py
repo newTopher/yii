@@ -18,5 +18,5 @@ class base():
 
     def formatDict(self,dict):
         for (k,v) in dict.items():
-            dict[k]=str(v)
+            dict[k]=str(v).encode('UTF-8')
         return dict

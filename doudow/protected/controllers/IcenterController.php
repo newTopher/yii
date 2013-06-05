@@ -8,11 +8,15 @@ class IcenterController extends Controller{
      public function actionIcenter(){
          $user=Yii::app()->session['uid'];
          $attentionUserList=Yii::app()->python->python("Attentionlist::getUserAttentionList",$user['id']);
+         array_push($attentionUserList,$user['id']);
          if(is_array($attentionUserList)){
-             $pageInfo=array();
-             $pageInfo['page']=Yii::app()->request->getParam('page',1);
-             $pageInfo['everyPageRows']=25;
-             $newWeiboList=Yii::app()->python->python("Weibo::getCurrNewWeiboList",$attentionUserList,$pageInfo);
+             $data['page']=Yii::app()->request->getParam('page',1);
+             $data['everyPageRows']=25;
+             $data['attentionUserList']=$attentionUserList;
+             $newWeiboList=Yii::app()->python->python("Weibo::getCurrNewWeiboList",$data);
+             foreach($newWeiboList as $k=>$v){
+                 $newWeiboList[$k]['username']=Yii::app()->python->python("User::getUserNickName",$v['uid']);
+             }
          }else{
              throw new CException(Yii::t('yii','获取用户关注列表失败 weibo error'));
          }
@@ -21,13 +25,14 @@ class IcenterController extends Controller{
              'name'    =>$user['name'],
              'userSign'=>$user['user_sign'],
              'followersCounts'=>$user['followers_counts'],
-             'attentionCounts'=>$user['attention_counts']
+             'attentionCounts'=>$user['attention_counts'],
+             'newWeiboList'=>$newWeiboList
          ));
      }
 
      public function actionPublishNewWeibo(){
          $postData['uid']=Yii::app()->session['uid']['id'];
-         $postData['text']=urlencode(Yii::app()->request->getParam('weibocontents'));
+         $postData['text']=Yii::app()->request->getParam('weibocontents');
          $postData['create_time']=time();
          $pics=array('sourceImg'=>'source.jpg','thumbImg'=>'thumb.jpg','largeImg'=>'large.jpg');
          if(isset($pics)){
@@ -73,9 +78,9 @@ class IcenterController extends Controller{
 
      public function actionRepostWeibo(){
          $postData['uid']=Yii::app()->session['uid']['id'];
-         $postData['text']=urlencode(Yii::app()->request->getParam('weibocontents'));
+         $postData['text']=Yii::app()->request->getParam('weibocontents');
          $postData['create_time']=time();
-         $postData['w_id']=7;
+         $postData['w_id']=Yii::app()->request->getParam('w_id','');
          $postData['source']='Android';
          if(defined('OPEN_MEMCACHE')){
              $memcache=Yii::app()->memcache->getMemcache();

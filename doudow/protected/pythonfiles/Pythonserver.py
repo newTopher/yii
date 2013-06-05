@@ -11,7 +11,7 @@ sys.path.append('.\\userPackage')
 sys.path.append('.\\schoolPackage')
 sys.path.append('.\\weiboPackage')
 sys.path.append('.\\attentionlistPackage')
-SERVER_LISTENING_PORT=21230
+SERVER_LISTENING_PORT=11230
 CHARSET='UTF-8'
 
 if __name__ == "__main__":
@@ -22,8 +22,6 @@ if __name__ == "__main__":
     socketStart=socketPackage.socketCreate(SERVER_LISTENING_PORT)
 
     print 'Listening port SERVER_LISTENING_PORT'
-
-
 
 
 

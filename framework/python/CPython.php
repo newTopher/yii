@@ -57,12 +57,16 @@ class CPython extends CComponent{
 		}while($sendLen<$requestLen);
 
         $response = "";
-		if (($response = socket_read($this->_socket,1400)) == false){
-			throw new CException(Yii::t('python',"socket创建失败"));
-		}
-		if ($response == ""){
-            throw new CException(Yii::t('python',"接受内容为空"));
-		}
+        while(true){
+            $recv = "";
+            if (($recv = socket_read($this->_socket, 1400)) === false){
+                throw new CException(Yii::t("[PPython Error] socket read error.", SOCKET_ERROR));
+            }
+            if ($recv == ""){
+                break;
+            }
+            $response .= $recv;
+        }
 		$this->close();
 		return $response;
 	}
@@ -74,7 +78,7 @@ class CPython extends CComponent{
 			throw new CException(Yii::t('python',$msg));
 		}else{
 			if($msg != 'N'){
-				 return unserialize($msg);
+				return unserialize($msg);
 			}
 		}
 	}
