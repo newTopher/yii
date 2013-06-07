@@ -17,6 +17,7 @@ class IcenterController extends Controller{
              foreach($newWeiboList as $k=>$v){
                  $newWeiboList[$k]['username']=Yii::app()->python->python("User::getUserNickName",$v['uid']);
              }
+             print_r($newWeiboList);
          }else{
              throw new CException(Yii::t('yii','获取用户关注列表失败 weibo error'));
          }

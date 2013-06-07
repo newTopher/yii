@@ -17,7 +17,11 @@
 
     <div>
             <?php foreach($newWeiboList as $k=>$v):?>
-            <span><?php echo $v['text'] ?></span>  <a href="<?php echo Yii::app()->createUrl('Icenter/RepostWeibo',array('w_id'=>$v['w_id']))?>">转发</a> <a href="">评论</a><br>
+            <span>
+                <a href='<?php Yii::app()->createUrl('icenter/icenter',array('uid'=>$v['uid'])); ?>'><?php echo $v['username'] ;?></a>&nbsp;&nbsp;
+                <?php echo $v['text'].$v['uid'];?>
+            </span>
+            <a href="<?php echo Yii::app()->createUrl('Icenter/RepostWeibo',array('w_id'=>$v['w_id']))?>">转发</a> <a href="">评论</a><br>
             <?php endforeach ?>
     </div>
 
