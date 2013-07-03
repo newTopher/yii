@@ -48,6 +48,8 @@ class User(base.base):
 
     def validUserName(self,username):
         query=self.session.query(UserModel).filter_by(username=str(username[0])).first()
+        self.session.flush()
+        self.session.commit()
         if query is not None:
             return False
         else:
@@ -55,6 +57,8 @@ class User(base.base):
 
     def validEmail(self,email):
         query=self.session.query(UserModel).filter_by(email=str(email[0])).first()
+        self.session.flush()
+        self.session.commit()
         if query is not None:
             return False
         else:
@@ -87,6 +91,7 @@ class User(base.base):
 
     def userLogin(self,postData):
         passQuery=self.session.query(UserModel).filter_by(password=str(postData[0]['password']))
+        self.session.flush()
         if passQuery is not None:
             usernameList=[instant.email for instant in passQuery]
             if postData[0]['email'] in usernameList:
@@ -104,6 +109,8 @@ class User(base.base):
 
     def getUser(self,id):
         userQuery=self.session.query(UserModel,UserAttrInfoModel).filter(UserAttrInfoModel.uid==UserModel.id).filter(UserModel.id==int(id[0])).first()
+        self.session.flush()
+        self.session.commit()
         if userQuery is not None:
             mergeDict=dict();
             mergeDict=userQuery.UserModel.__dict__.copy()
@@ -116,10 +123,36 @@ class User(base.base):
 
     def getUserNickName(self,id):
         query=self.session.query(UserModel).filter(UserModel.id==int(id[0])).first()
+        self.session.flush()
+        self.session.commit()
         if query is not None:
             return str(query.username)
         else:
             return -1
+
+    def updateUserFollowersCounts(self,uid,tag):
+            try:
+                if tag==0:
+                    self.session.query(UserModel).filter(UserModel.id == uid).update({'followers_counts':UserModel.followers_counts-int(1)})
+                else:
+                    self.session.query(UserModel).filter(UserModel.id == uid).update({'followers_counts':UserModel.followers_counts+int(1)})
+                self.session.flush()
+                self.session.commit()
+                return True
+            except:
+                return False
+
+    def updateUserAttentionCounts(self,uid,tag):
+        try:
+            if tag==0:
+                self.session.query(UserModel).filter(UserModel.id == uid).update({'attention_counts':UserModel.attention_counts-int(1)})
+            else:
+                self.session.query(UserModel).filter(UserModel.id == uid).update({'attention_counts':UserModel.attention_counts+int(1)})
+            self.session.flush()
+            self.session.commit()
+            return True
+        except:
+            return False
 
 
 

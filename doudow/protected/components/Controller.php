@@ -73,4 +73,11 @@ class Controller extends CController
         }
     }
 
+    public function filterAccessControl($filterChain){
+        if(Yii::app()->session['uid']==null){
+            $this->redirect(array('login/showlogin'));
+        }
+        $filterChain->run();
+    }
+
 }

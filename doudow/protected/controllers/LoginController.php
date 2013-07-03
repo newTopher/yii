@@ -42,6 +42,11 @@ class LoginController extends Controller{
 
     }
 
+    public function actionLogout(){
+        Yii::app()->session['uid']=null;
+        $this->redirect(array('login/showlogin'));
+    }
+
 
 
 }

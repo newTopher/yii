@@ -7,6 +7,7 @@ class IcenterController extends Controller{
 
      public function actionIcenter(){
          $user=Yii::app()->session['uid'];
+         Yii::app()->clientScript->registerCoreScript('jquery');
          $attentionUserList=Yii::app()->python->python("Attentionlist::getUserAttentionList",$user['id']);
          array_push($attentionUserList,$user['id']);
          if(is_array($attentionUserList)){
@@ -16,12 +17,14 @@ class IcenterController extends Controller{
              $newWeiboList=Yii::app()->python->python("Weibo::getCurrNewWeiboList",$data);
              foreach($newWeiboList as $k=>$v){
                  $newWeiboList[$k]['username']=Yii::app()->python->python("User::getUserNickName",$v['uid']);
+                 $newWeiboList[$k]['create_time']=date("Y-m-d H:i:s",$v['create_time']);
              }
-             print_r($newWeiboList);
+             //print_r($newWeiboList);
          }else{
              throw new CException(Yii::t('yii','获取用户关注列表失败 weibo error'));
          }
          $this->render('icenter',array(
+             'uid'=>$user['id'],
              'username'=>$user['username'],
              'name'    =>$user['name'],
              'userSign'=>$user['user_sign'],

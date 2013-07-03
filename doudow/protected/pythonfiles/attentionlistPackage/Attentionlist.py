@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 import base
+import userPackage
 class Attentionlist(base.base):
     mapperInstant=None
 
@@ -24,6 +25,31 @@ class Attentionlist(base.base):
             return followerList
         except:
             return -1
+
+    def cancelAttention(self,uids):
+        try:
+            self.session.query(AttentionlistModel).filter(AttentionlistModel.marster_uid==int(uids[0]['muid']),AttentionlistModel.follower_uid==int(uids[0]['fuid'])).delete()
+            self.session.commit()
+            self.session.flush()
+            userModel=userPackage.User()
+            userModel.updateUserFollowersCounts(int(uids[0]['muid']),0)
+            userModel.updateUserAttentionCounts(int(uids[0]['fuid']),0)
+            return True
+        except:
+            return False
+
+    def addAttention(self,uids):
+        attentionModel=AttentionlistModel()
+        attentionModel.marster_uid=int(uids[0]['muid'])
+        attentionModel.follower_uid=int(uids[0]['fuid'])
+        try:
+            self.session.add(attentionModel)
+            self.session.commit()
+            self.session.flush()
+            userModel.updateUserFollowersCounts(int(uids[0]['muid']),1)
+            userModel.updateUserAttentionCounts(int(uids[0]['fuid']),1)
+        except:
+            return False
 
 
 class AttentionlistModel(object):

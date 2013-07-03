@@ -58,15 +58,17 @@ class Weibo(base.base):
 
 
     def repostWeibo(self,postData):
+        wid=int(postData[0]['w_id'])
         weiboModel=WeiboModel()
         weiboModel.uid=int(postData[0]['uid'])
         weiboModel.text=str(postData[0]['text'])
-        weiboModel.retweeted_status=int(postData[0]['w_id']);
+        weiboModel.retweeted_status=wid
         weiboModel.create_time=int(postData[0]['create_time'])
         weiboModel.source=str(postData[0]['source'])
 
         try:
             self.session.add(weiboModel)
+            self.session.query(WeiboModel).filter(WeiboModel.w_id == wid).update({'reposts_counts':WeiboModel.reposts_counts+int(1)})
             self.session.flush()
             self.session.commit()
 
@@ -104,6 +106,9 @@ class Weibo(base.base):
                 return weiboList
         except:
             return -1
+
+
+
 
 
 
