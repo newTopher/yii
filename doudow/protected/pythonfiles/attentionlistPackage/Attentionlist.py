@@ -46,10 +46,40 @@ class Attentionlist(base.base):
             self.session.add(attentionModel)
             self.session.commit()
             self.session.flush()
+            userModel=userPackage.User()
             userModel.updateUserFollowersCounts(int(uids[0]['muid']),1)
             userModel.updateUserAttentionCounts(int(uids[0]['fuid']),1)
+            return True
         except:
             return False
+
+    def showFollowers(self,muid):
+        listquery=self.session.query(AttentionlistModel.follower_uid).filter(AttentionlistModel.marster_uid==int(muid[0]))
+        self.session.commit()
+        self.session.flush()
+        if listquery is not None:
+            followerList=list()
+            for instant in listquery:
+                followerList.append(int(instant.follower_uid))
+            userModel=userPackage.User()
+            return userModel.getUserNameByUidlist(tuple(followerList))
+        else:
+            return False
+
+    def showAttentions(self,fuid):
+        listquery=self.session.query(AttentionlistModel.marster_uid).filter(AttentionlistModel.follower_uid==int(fuid[0]))
+        self.session.commit()
+        self.session.flush()
+        if listquery is not None:
+            attentionList=list()
+            for instant in listquery:
+                attentionList.append(int(instant.marster_uid))
+            userModel=userPackage.User()
+            return userModel.getUserNameByUidlist(tuple(attentionList))
+        else:
+            return False
+
+        
 
 
 class AttentionlistModel(object):

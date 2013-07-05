@@ -154,6 +154,21 @@ class User(base.base):
         except:
             return False
 
+    def getUserNameByUidlist(self,uids):
+        try:
+            query=self.session.query(UserModel.id,UserModel.username).filter(UserModel.id.in_(uids))  #接收元组
+            self.session.flush()
+            self.session.commit()
+            if query is not None:
+                userlist=list()
+                for instant in query:
+                    del instant.__dict__['_labels']
+                    userlist.append(self.formatDict(instant.__dict__))
+                return userlist
+        except:
+            return -1
+
+
 
 
 class UserModel(object):

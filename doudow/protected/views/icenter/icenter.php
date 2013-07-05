@@ -27,6 +27,12 @@
                      $(o).click(function(){
                          $(this).next().show();
                      });
+
+                     $("#commentsid a").each(function(i,o){
+                         $(o).click(function(){
+                             $(this).next().show();
+                         });
+                     });
                  });
              });
         </script>
@@ -35,8 +41,8 @@
     用户名:<a href="<?php echo $uid ;?>"><?php echo $username; ?></a><br>
     姓名:<?php echo $name; ?> <a href="<?php echo Yii::app()->createUrl('Login/Logout'); ?>">退出</a> <br>
     个性签名:<?php echo $userSign; ?><br>
-    粉丝数:<a href=""><?php echo $followersCounts ?></a><br>
-    关注数:<a href=""><?php echo $attentionCounts ?></a><br>
+    粉丝数:<a href="<?php echo Yii::app()->createUrl('Userlist/ShowFollowers',array('muid'=>$uid)); ?>"><?php echo $followersCounts ?></a><br>
+    关注数:<a href="<?php echo Yii::app()->createUrl('Userlist/ShowAttentions',array('fuid'=>$uid)); ?>"><?php echo $attentionCounts ?></a><br>
     <h1>个人中心</h1>
     发布微博
     <?php echo CHtml::beginForm('publishNewWeibo','post'); ?>
@@ -67,10 +73,11 @@
             <span id="commentsid" class="commentsid">
                 <a href="javascript::void();">评论(<?php echo $v['comments_counts'] ; ?>)</a>
                 <span class="repost_box">
-                    <?php echo CHtml::beginForm('RepostWeibo','post'); ?>
+                    <?php echo CHtml::beginForm(Yii::app()->createUrl('Comment/PubComment'),'post'); ?>
                     <?php echo CHtml::hiddenField('w_id',$v['w_id']); ?>
-                    转发内容:<?php echo CHtml::textField('weibocontents');  ?><br>
-                    <?php echo CHtml::submitButton('转发');  ?>
+                    <?php echo CHtml::hiddenField('uid',$v['uid']); ?>
+                    评论内容:<?php echo CHtml::textArea('comment_contents');  ?><br>
+                    <?php echo CHtml::submitButton('评论');  ?>
                     <?php echo CHtml::endForm();    ?>
                 </span>
             </span>
